@@ -1,0 +1,66 @@
+pip install virtualenv
+
+py -3 -m venv xyz
+
+abc\scripts\activate
+
+pip install django
+
+django-admin
+
+-->>>
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+ *   runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+ *   startproject
+    test
+    testserver
+
+-->>>
+
+django-admin startproject poll_app
+
+cd poll_app
+
+python manage.py runserver
+
+py manage.py startapp polls
+
+py manage.py migrate
+
+((back to directry usc " ../ "))
+
+python -m pip install django-widget-tweaks
+
+
+<<extra>> alt+Z for horizontal scrowl
+<<extra>> shift+scroll for scroll
+
+
+
+<<sqlite3>> 
+sqlite3 db.sqlite3 'select *from polls_poll'
+
+sqlite3 db.sqlite3 'delete from polls_poll'
+
+sqlite3 db.sqlite3 'delete from polls_poll where ID = 3 '
+
